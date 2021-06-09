@@ -17,9 +17,9 @@
 
 # inherit MI A2 device config for RohieOS
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_jasmine_sprout.mk
+    $(LOCAL_DIR)/nad_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_jasmine_sprout-user \
-    aosp_jasmine_sprout-userdebug \
-    aosp_jasmine_sprout-eng
+    nad_jasmine_sprout-user \
+    nad_jasmine_sprout-userdebug \
+    nad_jasmine_sprout-eng
