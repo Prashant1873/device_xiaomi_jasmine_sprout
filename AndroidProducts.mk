@@ -17,9 +17,9 @@
 
 # inherit MI A2 device config for RohieOS
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/p404_jasmine_sprout.mk
+    $(LOCAL_DIR)/cherish_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    p404_jasmine_sprout-user \
-    p404_jasmine_sprout-userdebug \
-    p404_jasmine_sprout-eng
+    cherish_jasmine_sprout-user \
+    cherish_jasmine_sprout-userdebug \
+    cherish_jasmine_sprout-eng
