@@ -41,6 +41,3 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := cherish_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
-
-# TWRP Support
-BUILD_TWRP := true
