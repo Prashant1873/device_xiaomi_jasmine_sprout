@@ -17,8 +17,8 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
-# Inherit ShapeShiftOS product configuration
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit Havoc product configuration
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -33,24 +33,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
-# Cherish Properties
+# havoc Properties
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-CHERISH_BUILD_TYPE := OFFICIAL
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_GAPPS_ARCH := arm64
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := cherish_jasmine_sprout
+PRODUCT_NAME := havoc_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
 
-# Inherit from custom vendor.
-$(call inherit-product, vendor/MiuiCamera/config.mk)
-
-# Maintainer Props
-PRODUCT_GENERIC_PROPERTIES += \
-    ro.cherish.maintainer=PrashantShukla
 
