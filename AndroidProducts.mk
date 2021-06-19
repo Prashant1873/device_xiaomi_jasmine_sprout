@@ -17,9 +17,9 @@
 
 # inherit MI A2 device config for RohieOS
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_jasmine_sprout.mk
+    $(LOCAL_DIR)/descendant_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_jasmine_sprout-user \
-    havoc_jasmine_sprout-userdebug \
-    havoc_jasmine_sprout-eng
+    descendant_jasmine_sprout-user \
+    descendant_jasmine_sprout-userdebug \
+    descendant_jasmine_sprout-eng
