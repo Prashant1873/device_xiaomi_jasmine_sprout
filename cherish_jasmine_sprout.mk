@@ -48,7 +48,7 @@ PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
 
 # Inherit from custom vendor.
-$(call inherit-product, vendor/MiuiCamera/config.mk)
+$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
 
 # Maintainer Props
 PRODUCT_GENERIC_PROPERTIES += \
