@@ -18,7 +18,7 @@
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
 # Inherit ShapeShiftOS product configuration
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -43,14 +43,15 @@ TARGET_GAPPS_ARCH := arm64
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := cherish_jasmine_sprout
+PRODUCT_NAME := nad_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
 
 # Inherit from custom vendor.
 $(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
 
-# Maintainer Props
-PRODUCT_GENERIC_PROPERTIES += \
-    ro.cherish.maintainer=PrashantShukla
+$(call inherit-product-if-exists, packages/apps/NusantaraParts/nadproject.mk)
+
+# Pixel-charging
+USE_PIXEL_CHARGING := true
 
