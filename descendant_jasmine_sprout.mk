@@ -27,14 +27,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210505.003 7255357 release-keys" \
-    BUILD_FINGERPRINT="google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.210705.001 7380771 release-keys" \
+    BUILD_FINGERPRINT="google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys"
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 # havoc Properties
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := true
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
@@ -43,4 +46,5 @@ PRODUCT_NAME := descendant_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
 
-
+# Inherit from custom vendor.
+$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
