@@ -39,7 +39,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 CHERISH_BUILD_TYPE := OFFICIAL
 TARGET_INCLUDE_WIFI_EXT := true
-TARGET_GAPPS_ARCH := arm64
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
@@ -55,3 +54,11 @@ $(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
 PRODUCT_GENERIC_PROPERTIES += \
     ro.cherish.maintainer=PrashantShukla
 
+# Gapps
+WITH_GMS := true
+IS_PHONE := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
