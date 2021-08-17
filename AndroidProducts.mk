@@ -15,9 +15,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_jasmine_sprout.mk
+    $(LOCAL_DIR)/octavi_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_jasmine_sprout-user \
-    aosp_jasmine_sprout-userdebug \
-    aosp_jasmine_sprout-eng
+    octavi_jasmine_sprout-user \
+    octavi_jasmine_sprout-userdebug \
+    octavi_jasmine_sprout-eng
