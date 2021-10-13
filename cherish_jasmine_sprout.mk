@@ -37,8 +37,6 @@ CHERISH_BUILD_TYPE := OFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
-SELINUX_IGNORE_NEVERALLOWS_ON_USER := true
-
 # Inherit from custom vendor.
 $(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
 
